@@ -408,10 +408,9 @@ impl std::fmt::Display for Error {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         match self {
             Error::NoInstallDir => write!(f, "{}", t!("error.no_install_dir")),
-            Error::CannotFindTarget => write!(f, "{}", t!("error.cannot_find_target")),
             Error::IoError(e) => write!(f, "{}", t!("error.io_error", error = e)),
             Error::RegistryValueError(e) => write!(f, "{}", t!("error.registry_value_error", error = e)),
-            Error::FailedToRestore => write!(f, t!("error.failed_to_restore"))
+            Error::FailedToRestore => write!(f, "{}", t!("error.failed_to_restore"))
         }
     }
 }

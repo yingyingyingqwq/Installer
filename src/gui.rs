@@ -245,8 +245,8 @@ unsafe extern "system" fn dlg_proc(dialog: HWND, message: u32, wparam: WPARAM, l
                     if installer.pre_install().is_err() {
                         MessageBoxW(
                             dialog,
-                            w!("Failed to back up game EXE, use caution when uninstalling."),
-                            w!("Warning"),
+                            &HSTRING::from(t!("gui.warning_backup_failed")),
+                            &HSTRING::from(t!("gui.warning")),
                             MB_ICONWARNING | MB_OK
                         );
                     }

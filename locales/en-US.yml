@@ -10,6 +10,7 @@ gui:
   warning:              "Warning"
   warning_no_dir:       "Failed to detect the game's install location.\nPlease select it manually."
   warning_multi-installation:        "Multiple installations of Hachimi detected! \nPlease uninstall one of them, otherwise the game will not work correctly."
+  warning_backup_failed: "Failed to back up game EXE, use caution when uninstalling."
   error: "Error"
   already_installed: "Hachimi is already installed as %{dll}"
   replace_confirm: "Replace %{dll}?"
