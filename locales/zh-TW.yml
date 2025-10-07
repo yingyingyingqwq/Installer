@@ -15,7 +15,7 @@ gui:
   replace_confirm:      "要替換 %{dll} 嗎？"
   delete_confirm:       "要刪除 %{dll} 嗎？"
   delete_data_dir:      "是否同時刪除 Hachimi 的資料目錄？"
-  msg_install_ok:       "安裝完成。"
+  msg_install_ok:       "安裝完成。請務必在遊戲更新時重新安裝。"
   msg_install_fail:     "%{err}"
   msg_uninstall:        "刪除 %{dll}？"
   msg_language:         "語言"
@@ -44,3 +44,5 @@ error:
   cannot_find_target: "在指定的安裝位置找不到目標 DLL"
   io_error: "I/O 錯誤：%{error}"
   registry_value_error: "註冊值錯誤：%{error}"
+  failed_to_restore:    "無法還原備份。請在啟動前於 Steam 驗證遊戲完整性。"
+

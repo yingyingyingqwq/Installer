@@ -9,7 +9,7 @@ mod gui;
 
 pub use crate::i18n::_rust_i18n_translate;
 
-#[cfg(feature = "compress_dll")]
+#[cfg(feature = "compress_bin")]
 #[macro_use]
 extern crate include_bytes_zstd;
 

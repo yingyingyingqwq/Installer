@@ -1,5 +1,5 @@
-# Hachimi Installer
-Simple installer for Hachimi.
+# Hachimi Installer for Steam
+Simple installer for Hachimi, adapted for use with the Steam version of Umamusume: Pretty Derby (JP). Built against the latest DLLs from [kairusds/Hachimi-Edge](https://github.com/kairusds/Hachimi-Edge).
 
 # Usage
 The installer supports both GUI and CLI/Unattended mode. To start in GUI mode, just launch the application without any arguments.
@@ -25,7 +25,7 @@ Put hachimi.dll in the root directory, build as any other rust application.
 
 - **MSRV:** v1.77
 - Features:
-    - `compress_dll`: Compress the dll using zstd and decompress it during installation.
+    - `compress_bin`: Compress the dll using zstd and decompress it during installation.
 
 # License
 [MIT](LICENSE)

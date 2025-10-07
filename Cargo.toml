@@ -13,6 +13,8 @@ include-bytes-zstd = { version = "0.1", optional = true }
 registry = "1.3"
 once_cell = "1.19"
 rust-i18n = "2.3.1"
+steamlocate = "2.0.1"
+bsdiff = "0.2.1"
 
 [dependencies.windows]
 version = "0.58"
@@ -38,4 +40,4 @@ cc = "1.1"
 embed-resource = { git = "https://github.com/nabijaczleweli/rust-embed-resource.git", rev = "e98e9aa28d66b0c2ff43516b41847cac372310dd" }
 
 [features]
-compress_dll = ["dep:include-bytes-zstd"]
+compress_bin = ["dep:include-bytes-zstd"]
